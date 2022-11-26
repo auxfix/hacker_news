@@ -1,12 +1,12 @@
 import API from "services/api";
-import { HackerStory } from "types";
+import { HackerStory, User } from "types";
 
 export default class HackerApi extends API {
     constructor(){
         super(process.env.HACKER_API);
     }
 
-    async getUser(id: number): Promise<Array<HackerStory>> {
+    async getUser(id: string): Promise<User> {
         return await this.doFetch(`user/${id}.json`);
     }
 
@@ -14,7 +14,7 @@ export default class HackerApi extends API {
         return await this.doFetch(`topstories.json`);
     }
 
-    async getHackerStoy(id: number): Promise<Array<number>> {
+    async getHackerStory(id: number): Promise<HackerStory> {
         return await this.doFetch(`item/${id}.json`);
     }
 }

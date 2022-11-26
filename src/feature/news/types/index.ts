@@ -2,10 +2,11 @@ export interface HackerStory {
     id: number;
     title: string;
     url: string;
-    timestamp: number;
+    time: number;
     score: number;
     authorId: string;
     karma?: number;
+    img?: string; 
   }
 
 export interface User {

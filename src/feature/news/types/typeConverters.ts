@@ -6,7 +6,7 @@ export function HackerStory_Dto_to_Internal(dto: HackerStoryDTO): HackerStory {
         id: dto.id,
         title: dto.title,
         url: dto.url,
-        timestamp: dto.timestamp,
+        time: dto.time,
         score: dto.score,
         authorId: dto.by,
     }
