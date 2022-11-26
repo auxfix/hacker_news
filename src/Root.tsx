@@ -18,7 +18,7 @@ import Footer from 'components/Footer';
 import Header from 'components/Header';
 import PrivateRoute from 'components/PrivateRoute';
 import PublicRoute from 'components/PublicRoute';
-import SystemAlerts from 'containers/SystemAlerts';
+import SystemAlerts from 'pages/SystemAlerts';
 import Home from 'routes/Home';
 import NotFound from 'routes/NotFound';
 import Private from 'routes/Private';

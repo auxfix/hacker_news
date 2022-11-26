@@ -15,6 +15,11 @@ export const ActionTypes = keyMirror({
   USER_LOGOUT_REQUEST: undefined,
   USER_LOGOUT_SUCCESS: undefined,
   USER_LOGOUT_FAILURE: undefined,
+
+  //news
+  GET_NEWS_REQUEST: undefined,
+  GET_NEWS_SUCCESS: undefined,
+  GET_NEWS_FAILURE: undefined,
 });
 
 export const STATUS: Status = {

@@ -11,7 +11,7 @@ import { showAlert } from 'actions';
 import ErrorHandler from 'components/ErrorHandler';
 import Loader from 'components/Loader';
 import Reload from 'components/Reload';
-import GlobalStyles from 'containers/GlobalStyles';
+import GlobalStyles from 'pages/GlobalStyles';
 
 import reportWebVitals from './reportWebVitals';
 import Root from './Root';

@@ -44,8 +44,13 @@ export interface RootState {
   app: AppState;
   github: GitHubState;
   user: UserState;
+  news: NewsState;
 }
 
 export interface WithDispatch {
   dispatch: Dispatch;
+}
+
+export interface NewsState {
+  news: Array<string>;
 }

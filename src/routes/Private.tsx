@@ -3,7 +3,7 @@ import { Box, Container, Heading, Link, Paragraph, Text } from 'styled-minimal';
 
 import { spacer } from 'modules/theme';
 
-import Github from 'containers/GitHub';
+import Github from 'pages/GitHub';
 
 const Header = styled.div`
   margin-bottom: ${spacer(3)};
