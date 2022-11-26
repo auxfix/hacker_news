@@ -1,1 +1,7 @@
 $main_color: rgb(23, 23, 90);
+
+@mixin flex_position($justify_content, $align_items){
+    display: flex;
+    justify-content: $justify_content;
+    align_items: $align_items;
+}

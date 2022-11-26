@@ -1,4 +1,10 @@
 @import '~styles/global.scss';
 .container {
-    border: 1px solid $main_color
+    border: 1px solid $main_color;
+    @include flex_position('center', 'center');
+}
+
+.image {
+    width: 200px;
+    height: 100px;
 }
