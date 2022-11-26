@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-repo-tools check-remote && lint-staged
+yarn repo-tools check-remote 
+yarn lint-staged

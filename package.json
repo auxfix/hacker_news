@@ -144,6 +144,7 @@
     "resolve": "^1.22.0",
     "resolve-url-loader": "^5.0.0",
     "rsync": "^0.6.1",
+    "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "serve": "^14.1.2",
     "size-limit": "^8.1.0",

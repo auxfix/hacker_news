@@ -9,6 +9,8 @@ import { useAppSelector } from 'modules/hooks';
 import { getNews } from 'feature/news/actions';
 
 import Loader from 'components/Loader';
+import Button from 'components/Button';
+import NewsItem from 'feature/news/components/NewsItem';
 
 
 function HackerNews() {
@@ -34,15 +36,9 @@ function HackerNews() {
 
   return (
     <div>
-        <div><button onClick={handleUpdateNews}>Get more news</button></div>
+        <div><Button onClick={handleUpdateNews}>Get more news</Button></div>
         {news.map(newsItem => (
-           <div key={newsItem.id}>
-            <div>{newsItem.id}</div>
-            <div>{newsItem.title}</div>
-            <div>{newsItem.url}</div>
-            <div>{newsItem.score}</div>
-            <div>{newsItem.timestamp}</div>
-           </div> 
+            <NewsItem newsItem={newsItem}/>
         ))}
     </div>
   );
