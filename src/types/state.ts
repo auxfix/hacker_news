@@ -2,6 +2,7 @@ import React from 'react';
 import { Dispatch } from 'redux';
 import { Variants } from 'styled-minimal/lib/types';
 import { ValueOf } from 'type-fest';
+import { HackerStory } from 'feature/news/types';
 
 import { AlertPosition, Icons, Status } from './common';
 
@@ -52,5 +53,6 @@ export interface WithDispatch {
 }
 
 export interface NewsState {
-  news: Array<string>;
+  news: Array<HackerStory>;
+  isLoading: boolean;
 }
