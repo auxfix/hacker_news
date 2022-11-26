@@ -6,7 +6,7 @@ export default class HackerApi extends API {
         super(process.env.HACKER_API);
     }
 
-    async getUser(id: string): Promise<Array<HackerStory>> {
+    async getUser(id: number): Promise<Array<HackerStory>> {
         return await this.doFetch(`user/${id}.json`);
     }
 
@@ -14,7 +14,7 @@ export default class HackerApi extends API {
         return await this.doFetch(`topstories.json`);
     }
 
-    async getHackerStoy(id: string): Promise<Array<number>> {
+    async getHackerStoy(id: number): Promise<Array<number>> {
         return await this.doFetch(`item/${id}.json`);
     }
 }

@@ -18,7 +18,7 @@ export function* getNews() {
     const news: Array<HackerStoryDTO> = [];
     const users: Array<UserDTO> = [];
 
-    for (let id in rundom_10_news) {
+    for (let id of rundom_10_news) {
         let localNews: HackerStoryDTO = yield hacker_api.getHackerStoy(id);
         if(!!localNews) {
           news.push(localNews);
@@ -31,7 +31,7 @@ export function* getNews() {
         return acc;
     },[] as Array<number>)
 
-    for (let id in usersIds) {
+    for (let id of usersIds) {
         let localUser: UserDTO = yield hacker_api.getUser(id);
         if(!!localUser) {
           users.push(localUser);

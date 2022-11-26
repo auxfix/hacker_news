@@ -23,7 +23,10 @@ import Home from 'routes/Home';
 import NotFound from 'routes/NotFound';
 import Private from 'routes/Private';
 
+import HackerNews from 'pages/News';
+
 import { UserState } from 'types';
+
 
 const AppWrapper = styled.div`
   display: flex;
@@ -89,6 +92,13 @@ function Root() {
                 }
                 path="/private"
               />
+              <Route
+                element={
+                  <HackerNews/>
+                }
+                path="/news"
+              />
+              
               <Route element={<NotFound />} path="*" />
             </Routes>
           </Main>
