@@ -1,4 +1,5 @@
 import { HackerStory } from "types";
+import { getFormattedTimeForNews } from 'feature/news/utils';
 import styles from './newsItem.module.scss';
 
 interface NewsProps {
@@ -7,17 +8,43 @@ interface NewsProps {
 
 export default function NewsItem(props: NewsProps){
     const { newsItem } = props;
+
+    const { weekDay, monthDateYear } = getFormattedTimeForNews(newsItem.time);
     return (
      <div className={styles.container} key={newsItem.id}>
-        <div>
-            <div><span>{'id: '}</span>{newsItem.id}</div>
-            <div><span>{'title: '}</span>{newsItem.title}</div>
-            <div><span>{'url: '}</span>{newsItem.url}</div>
-            <div><span>{'score: '}</span>{newsItem.score}</div>
-            <div><span>{'time: '}</span>{newsItem.time}</div>
-            <div><span>{'karma: '}</span>{newsItem.karma}</div>
-        </div>
         <img className={styles.image} src={newsItem.img}/>
+        <div className={styles.info}>
+            <div className={styles.time}>
+                <span>{weekDay}</span>
+                <span>{monthDateYear}</span>
+            </div>
+            <h1 className={styles.title}>{newsItem.title}</h1>
+            <div className={styles.infoBlock}>
+                <div className={styles.text}>
+                    <span>Score:</span>
+                    <span>{newsItem.score}</span>
+                </div>
+                <div className={styles.text}>
+                    <span>id:</span>
+                    <span>{newsItem.id}</span>
+                </div>
+                <div className={styles.text}>
+                    <span>Karma:</span>
+                    <span>{newsItem.karma}</span>
+                </div>
+                <div className={styles.text}>
+                    <span>Author:</span>
+                    <span>{newsItem.authorId}</span>
+                </div>
+            </div>
+
+
+            <a href={newsItem.url} 
+               className={styles.readMore}
+               target="_blank"
+               >Read more</a>
+        </div>
+        
     </div>
    )
 }

@@ -9,6 +9,7 @@
       "*": ["src/*"],
       "assets/*": ["assets/*"],
       "test/*": ["test/*"],
+      "styles/*": ["src/styles/*"],
       "test-utils": ["test/__setup__/test-utils"]
     },
     "skipLibCheck": true,

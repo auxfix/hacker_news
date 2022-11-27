@@ -1,0 +1,10 @@
+@import '~styles/common.scss';
+
+.main {
+    min-height: 100vh;
+    padding: $header_height 0 0;
+}
+
+.appWrapper {
+    transition: opacity 0.5s;
+}

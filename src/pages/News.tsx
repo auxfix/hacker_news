@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { selectHackerNews, selectNewsAreLoading } from 'feature/news/selectros';
 
@@ -9,7 +9,7 @@ import { useAppSelector } from 'modules/hooks';
 import { getNews } from 'feature/news/actions';
 
 import Loader from 'components/Loader';
-import Button from 'components/Button';
+// import Button from 'components/Button';
 import NewsItem from 'feature/news/components/NewsItem';
 
 
@@ -23,12 +23,12 @@ function HackerNews() {
   }, [dispatch]);
 
 
-  const handleUpdateNews= useCallback(
-    () => {
-        dispatch(getNews());
-    },
-    [dispatch],
-  );
+  // const handleUpdateNews= useCallback(
+  //   () => {
+  //       dispatch(getNews());
+  //   },
+  //   [dispatch],
+  // );
 
   if(isLoading) {
     return <Loader/>;
@@ -36,7 +36,7 @@ function HackerNews() {
 
   return (
     <div>
-        <div><Button onClick={handleUpdateNews}>Get more news</Button></div>
+        {/* <div><Button onClick={handleUpdateNews}>Get more news</Button></div> */}
         {news.map(newsItem => (
             <NewsItem newsItem={newsItem}/>
         ))}
