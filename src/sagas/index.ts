@@ -1,12 +1,10 @@
 import { all, fork } from 'redux-saga/effects';
 
-import github from './github';
-import user from './user';
 import hackerNews from 'feature/news/sagas';
 
 /**
  * rootSaga
  */
 export default function* root() {
-  yield all([fork(github), fork(user), fork(hackerNews)]);
+  yield all([fork(hackerNews)]);
 }

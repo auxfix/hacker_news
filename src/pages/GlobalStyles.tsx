@@ -1,52 +1,29 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { appColor } from 'modules/theme';
+import { backgroundColor } from 'modules/theme';
 
 const GlobalStyle = createGlobalStyle`
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
 
-  html {
-    font-size: 62.5%;
-    -webkit-font-smoothing: antialiased;
-    height: 100%;
-  }
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${backgroundColor};
+  padding: 0, 1.5rem;
+}
 
-  body {
-    font-family: Lato, sans-serif;
-    font-size: 16px; /* stylelint-disable unit-disallowed-list */
-    margin: 0;
-    min-height: 100vh;
-    padding: 0;
-  }
-
-  img {
-    height: auto;
-    max-width: 100%;
-  }
-
-  a {
-    color: ${appColor};
-    text-decoration: none;
-
-    &.disabled {
-      pointer-events: none;
-    }
-  }
-
-  button {
-    appearance: none;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    line-height: 1;
-    padding: 0;
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 `;
 
 export default function GlobalStyles() {
