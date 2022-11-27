@@ -5,6 +5,8 @@ import { ActionTypes } from 'literals';
 import HackerApi from 'feature/news/services/api';
 
 import { getNewsSuccess, getNewsFailure } from 'feature/news/actions';
+import { showAlert } from 'actions';
+
 import { getRundomItemsFromArray, getRundomArray } from 'feature/news/utils';
 import { HackerStoryDTO, UserDTO } from 'feature/news/types/dto';
 import { HackerStory_Dto_to_Internal } from 'feature/news/types/typeConverters';
@@ -59,6 +61,7 @@ export function* getNews() {
 
   } catch (_) {
     yield put(getNewsFailure());
+    yield put(showAlert('Error getting news from the internet. Please try again later.', { variant: 'danger', timeout: 10 }));
   }
 }
 

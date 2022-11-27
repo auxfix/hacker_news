@@ -1,3 +1,4 @@
+import SVG from 'react-inlinesvg';
 import styled from 'styled-components';
 import { px } from 'styled-minimal';
 
@@ -8,7 +9,7 @@ interface Props {
   width?: number;
 }
 
-const IconWrapper = styled.svg`
+const IconWrapper = styled(SVG)`
   display: inline-block;
   line-height: 0;
 
@@ -19,10 +20,11 @@ const IconWrapper = styled.svg`
   }
 `;
 
-function Icon({ width = 20 }: Props) {
+function Icon({ name, width = 20 }: Props) {
   return (
     <IconWrapper
       height="100%"
+      src={`${process.env.PUBLIC_URL}/media/icons/${name}.svg`}
       width={px(width)}
     />
   );
