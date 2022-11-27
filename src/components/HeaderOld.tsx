@@ -1,13 +1,15 @@
+import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { Container, responsive } from 'styled-minimal';
+import { Container } from 'styled-minimal';
 
 import { appColor, headerHeight, spacer } from 'modules/theme';
 
-import { logOut } from 'actions';
 
-import Icon from 'components/Icon';
-import Logo from 'components/Logo';
+import { getNews } from 'feature/news/actions';
+
+
+import Button from 'components/Button';
 
 const HeaderWrapper = styled.header`
   background-color: #113740;
@@ -39,41 +41,22 @@ const HeaderContainer = styled(Container)`
   padding-top: ${spacer(2)};
 `;
 
-const Logout = styled.button`
-  align-items: center;
-  color: #fff;
-  display: flex;
-  font-size: 1.3rem;
-  padding: ${spacer(2)};
-
-  ${responsive({ lg: { fontSize: '1.6rem' } })}; /* stylelint-disable-line */
-
-  &.active {
-    color: #fff;
-  }
-
-  span {
-    display: inline-block;
-    margin-right: 0.4rem;
-    text-transform: uppercase;
-  }
-`;
 
 export default function Header() {
   const dispatch = useDispatch();
 
-  const handleClickLogout = () => {
-    dispatch(logOut());
-  };
+  
+  const handleUpdateNews= useCallback(
+    () => {
+        dispatch(getNews());
+    },
+    [dispatch],
+  );
 
   return (
     <HeaderWrapper data-testid="Header">
       <HeaderContainer>
-        <Logo />
-        <Logout onClick={handleClickLogout}>
-          <span>logout</span>
-          <Icon name="sign-out" width={16} />
-        </Logout>
+      <Button onClick={handleUpdateNews}>Get more news</Button> 
       </HeaderContainer>
     </HeaderWrapper>
   );
