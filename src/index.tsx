@@ -1,5 +1,5 @@
 
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { ErrorBoundary } from 'react-error-boundary';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
@@ -21,19 +21,18 @@ const { persistor, store } = configStore();
 
 window.store = store;
 
-ReactDOM.render(
-  <Provider store={store}>
-    <PersistGate loading={<Loader block size={100} />} persistor={persistor}>
-      <ErrorBoundary FallbackComponent={ErrorHandler}>
-        <HelmetProvider>
-          <Root />
-        </HelmetProvider>
-      </ErrorBoundary>
-      <GlobalStyles />
-    </PersistGate>
-  </Provider>,
-  document.getElementById('root'),
-);
+const container = document.getElementById('root');
+const root = createRoot(container!);
+root.render(<Provider store={store}>
+  <PersistGate loading={<Loader block size={100} />} persistor={persistor}>
+    <ErrorBoundary FallbackComponent={ErrorHandler}>
+      <HelmetProvider>
+        <Root />
+      </HelmetProvider>
+    </ErrorBoundary>
+    <GlobalStyles />
+  </PersistGate>
+</Provider>);
 
 /* istanbul ignore next */
 register({

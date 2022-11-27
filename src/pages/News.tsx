@@ -33,7 +33,7 @@ function HackerNews() {
   return (
     <div>
         {news.map(newsItem => (
-            <NewsItem newsItem={newsItem}/>
+            <NewsItem key={newsItem.id} newsItem={newsItem}/>
         ))}
     </div>
   );
