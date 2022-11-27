@@ -21,20 +21,16 @@ export default function NewsItem(props: NewsProps){
             <h1 className={styles.title}>{newsItem.title}</h1>
             <div className={styles.infoBlock}>
                 <div className={styles.text}>
-                    <span>Score:</span>
+                    <span>Story score:</span>
                     <span>{newsItem.score}</span>
-                </div>
-                <div className={styles.text}>
-                    <span>id:</span>
-                    <span>{newsItem.id}</span>
-                </div>
-                <div className={styles.text}>
-                    <span>Karma:</span>
-                    <span>{newsItem.karma}</span>
                 </div>
                 <div className={styles.text}>
                     <span>Author:</span>
                     <span>{newsItem.authorId}</span>
+                </div>
+                <div className={styles.text}>
+                    <span>Author Karma:</span>
+                    <span>{newsItem.karma}</span>
                 </div>
             </div>
 

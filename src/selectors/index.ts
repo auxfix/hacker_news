@@ -7,11 +7,6 @@ export const selectApp = createSelector(
   app => app,
 );
 
-export const selectGitHub = createSelector(
-  (state: RootState) => state.github,
-  github => github,
-);
-
 export const selectUser = createSelector(
   (state: RootState) => state.user,
   user => user,

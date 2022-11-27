@@ -12,6 +12,8 @@ import Loader from 'components/Loader';
 
 import NewsItem from 'feature/news/components/NewsItem';
 
+import styles from 'styles/global.module.scss'
+
 
 function HackerNews() {
   const dispatch = useDispatch();
@@ -24,8 +26,8 @@ function HackerNews() {
 
 
 
-  if(isLoading) {
-    return <Loader/>;
+  if(isLoading) {     
+    return (<div className={styles.centered}><Loader/></div>);
   }
 
   return (

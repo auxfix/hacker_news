@@ -43,7 +43,6 @@ export interface UserState {
 export interface RootState {
   alerts: AlertsState;
   app: AppState;
-  github: GitHubState;
   user: UserState;
   news: NewsState;
 }

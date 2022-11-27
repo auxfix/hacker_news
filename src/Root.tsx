@@ -1,15 +1,9 @@
-import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useDispatch } from 'react-redux';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { selectUser } from 'selectors';
-import useTreeChanges from 'tree-changes-hook';
 
-import { useAppSelector } from 'modules/hooks';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 import { name } from 'config';
-
-import { showAlert } from 'actions';
 
 import Header from 'components/Header';
 import SystemAlerts from 'pages/SystemAlerts';
@@ -21,26 +15,14 @@ import styles from 'styles/global.module.scss';
 
 
 function Root() {
-  const dispatch = useDispatch();
-  const user = useAppSelector(selectUser);
-  const { changed } = useTreeChanges(user);
-
-  useEffect(() => {
-    if (changed('isAuthenticated', true)) {
-      dispatch(showAlert('Hello! And welcome!', { variant: 'success', icon: 'bell', timeout: 10 }));
-    }
-  }, [dispatch, changed]);
-
   return (
     <BrowserRouter>
-
-          {/* @ts-ignore */}
           <Helmet
             defaultTitle={name}
             defer={false}
             encodeSpecialCharacters
-            htmlAttributes={{ lang: 'pt-br' }}
-            titleAttributes={{ itemprop: 'name', lang: 'pt-br' }}
+            htmlAttributes={{ lang: 'en-us' }}
+            titleAttributes={{ itemprop: 'name', lang: 'en-us' }}
             titleTemplate={`%s | ${name}`}
           >
             <link
@@ -49,9 +31,7 @@ function Root() {
             />
           </Helmet>
           <Header />
-
           <main className={styles.main}>
-
             <Routes>
               <Route
                 element={
