@@ -2,26 +2,27 @@ import { backgroundColor } from 'modules/theme';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  html {
-    font-family: Roboto, sans-serif;
-  }
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
 
-  body {
-    align-items: center;
-    background-color: ${backgroundColor};
-    display: flex;
-    justify-content: center;
-    padding: 0, 1.5rem;
-    width: 100%;
-  }
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${backgroundColor};
+  padding: 0, 1.5rem;
+}
 
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 `;
 
 export default function GlobalStyles() {

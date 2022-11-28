@@ -1,5 +1,5 @@
-export interface hackerstory {
-  authorid: string;
+export interface HackerStory {
+  authorId: string;
   id: number;
   img?: string;
   karma?: number;
@@ -9,7 +9,7 @@ export interface hackerstory {
   url: string;
 }
 
-export interface user {
+export interface User {
   about: string;
   created: number;
   id: string;

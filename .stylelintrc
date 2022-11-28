@@ -1,11 +1,12 @@
 {
   "customSyntax": "postcss",
+  "processors": ["stylelint-processor-styled-components"],
   "extends": [
-    "stylelint-config-standard"
+    "stylelint-config-standard",
+    "stylelint-config-styled-components"
   ],
   "plugins": [
-    "stylelint-order",
-    "stylelint-scss"
+    "stylelint-order"
   ],
   "rules": {
     "at-rule-empty-line-before": [

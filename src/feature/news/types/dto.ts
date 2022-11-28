@@ -1,4 +1,4 @@
-export interface hackerstorydto {
+export interface HackerStoryDTO {
   by: string;
   id: number;
   score: number;
@@ -7,7 +7,7 @@ export interface hackerstorydto {
   url: string;
 }
 
-export interface userdto {
+export interface UserDTO {
   about: string;
   created: number;
   id: string;
