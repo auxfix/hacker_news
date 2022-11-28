@@ -10,7 +10,7 @@ export default function Button(props: ButtonProps) {
   const { children, onClick } = props;
   const [buttonStyle, onButtonDown, onButtonUp] = useButtonStyle([
     styles.button,
-    styles.button_on_push,
+    styles.buttononpush,
   ]);
 
   return (

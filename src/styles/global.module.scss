@@ -1,17 +1,13 @@
 @import '~styles/common.scss';
 
 .main {
-    min-height: 100vh;
-    padding: $header_height 0 0;
-}
-
-.appWrapper {
-    transition: opacity 0.5s;
+  min-height: 100vh;
+  padding: $header_height 0 0;
 }
 
 .centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

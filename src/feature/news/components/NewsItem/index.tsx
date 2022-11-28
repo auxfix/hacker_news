@@ -21,7 +21,7 @@ export default function NewsItem(props: NewsProps) {
           <span>{monthDateYear}</span>
         </div>
         <h1 className={styles.title}>{newsItem.title}</h1>
-        <div className={styles.infoBlock}>
+        <div className={styles.infoblock}>
           <div className={styles.text}>
             <span>Story score:</span>
             <span>{newsItem.score}</span>
@@ -36,7 +36,7 @@ export default function NewsItem(props: NewsProps) {
           </div>
         </div>
 
-        <a className={styles.readMore} href={newsItem.url} rel="noreferrer" target="_blank">
+        <a className={styles.readmore} href={newsItem.url} rel="noreferrer" target="_blank">
           Read more
         </a>
       </div>
