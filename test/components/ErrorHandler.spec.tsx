@@ -1,7 +1,5 @@
 import React from 'react';
-
 import ErrorHandler from 'components/ErrorHandler';
-
 import { fireEvent, render, screen } from 'test-utils';
 
 const mockResetError = jest.fn();

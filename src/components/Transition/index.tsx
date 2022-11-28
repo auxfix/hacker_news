@@ -1,6 +1,5 @@
 import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 import { Transitions } from 'types';
 
 import transitions, { classNames } from './transitions';

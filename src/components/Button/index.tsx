@@ -1,26 +1,27 @@
-import useButtonStyle from './hooks/useButtonStyle';
 import styles from './button.module.scss';
+import useButtonStyle from './hooks/useButtonStyle';
 
 interface ButtonProps {
-    onClick: () => void,
-    children: React.ReactNode,
+  children: React.ReactNode;
+  onClick: () => void;
 }
 
 export default function Button(props: ButtonProps) {
-    const { onClick, children } = props;
-    const [
-        buttonStyle, 
-        onButtonDown, 
-        onButtonUp
-    ] = useButtonStyle([styles.button, styles.button_on_push]);
+  const { children, onClick } = props;
+  const [buttonStyle, onButtonDown, onButtonUp] = useButtonStyle([
+    styles.button,
+    styles.button_on_push,
+  ]);
 
-    return (
-        <button 
-            type="button"
-            className={buttonStyle}
-            onMouseDown={onButtonDown}
-            onMouseUp={onButtonUp}
-            onClick={onClick}>
-            {children}
-        </button>);
+  return (
+    <button
+      className={buttonStyle}
+      onClick={onClick}
+      onMouseDown={onButtonDown}
+      onMouseUp={onButtonUp}
+      type="button"
+    >
+      {children}
+    </button>
+  );
 }

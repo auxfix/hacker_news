@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { navigate } from 'test-utils';
 
-export * from 'react-router-dom/umd/react-router-dom.development';
+// export * from 'react-router-dom/umd/react-router-dom.development';
 
 export function Link(props) {
   const { children, className, onClick, style, to, ...rest } = props;

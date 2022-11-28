@@ -1,8 +1,6 @@
-import { ActionTypes } from 'literals';
-
 import { hideAlert, showAlert } from 'actions';
+import { ActionTypes } from 'literals';
 import reducer from 'reducers/alerts';
-
 import { emptyAction } from 'test-utils';
 
 describe('reducers/alerts', () => {

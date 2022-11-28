@@ -1,24 +1,18 @@
-import { selectApp, selectGitHub, selectUser } from 'selectors';
+import { selectHackerNews, selectNewsAreLoading } from 'feature/news/selectros';
 import { configStore } from 'store';
 
 describe('selectors', () => {
   const { store } = configStore();
 
   describe('selectApp', () => {
-    it('should return the app', () => {
-      expect(selectApp(store.getState())).toMatchSnapshot();
+    it('should return the hacker news', () => {
+      expect(selectHackerNews(store.getState())).toMatchSnapshot();
     });
   });
 
   describe('selectGitHub', () => {
-    it('should return the github', () => {
-      expect(selectGitHub(store.getState())).toMatchSnapshot();
-    });
-  });
-
-  describe('selectUser', () => {
-    it('should return the user', () => {
-      expect(selectUser(store.getState())).toMatchSnapshot();
+    it('should return loading status', () => {
+      expect(selectNewsAreLoading(store.getState())).toMatchSnapshot();
     });
   });
 });

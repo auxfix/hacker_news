@@ -1,5 +1,4 @@
 import { keyMirror } from '@gilbarbara/helpers';
-
 import { Status } from 'types';
 
 export const ActionTypes = keyMirror({
@@ -7,7 +6,7 @@ export const ActionTypes = keyMirror({
   SHOW_ALERT: undefined,
   SET_APP_OPTIONS: undefined,
 
-  //news
+  // news
   GET_NEWS_REQUEST: undefined,
   GET_NEWS_SUCCESS: undefined,
   GET_NEWS_FAILURE: undefined,

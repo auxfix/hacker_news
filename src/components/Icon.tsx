@@ -1,7 +1,6 @@
 import SVG from 'react-inlinesvg';
 import styled from 'styled-components';
 import { px } from 'styled-minimal';
-
 import { Icons } from 'types';
 
 interface Props {

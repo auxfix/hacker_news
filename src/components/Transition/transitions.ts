@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
 import { easing } from 'modules/theme';
+import styled from 'styled-components';
 
 const Fade = styled.div`
   will-change: opacity, transform;

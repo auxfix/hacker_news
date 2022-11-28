@@ -1,15 +1,15 @@
 export interface HackerStoryDTO {
-    id: number;
-    title: string;
-    url: string;
-    time: number;
-    score: number;
-    by: string;
-  }
+  by: string;
+  id: number;
+  score: number;
+  time: number;
+  title: string;
+  url: string;
+}
 
 export interface UserDTO {
-    id: string;
-    created: number;
-    karma: number;
-    about: string;
-  }
+  about: string;
+  created: number;
+  id: string;
+  karma: number;
+}

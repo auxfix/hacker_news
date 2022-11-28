@@ -1,12 +1,8 @@
 import React from 'react';
 import { config } from 'react-transition-group';
-
-import { ActionTypes } from 'literals';
-
 import { showAlert } from 'actions';
-
-import SystemAlerts from 'containers/SystemAlerts';
-
+import { ActionTypes } from 'literals';
+import SystemAlerts from 'pages/SystemAlerts';
 import { fireEvent, render, screen } from 'test-utils';
 
 config.disabled = true;

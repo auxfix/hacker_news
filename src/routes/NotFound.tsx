@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
+import Background from 'components/Background';
 import styled from 'styled-components';
 import { Container, Heading } from 'styled-minimal';
-
-import Background from 'components/Background';
 
 const StyledContainer = styled(Container)`
   align-items: center;

@@ -1,7 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit';
-
 import { hideAlert, showAlert } from 'actions';
-
 import { AlertsState } from 'types';
 
 export const alertsState: AlertsState = {

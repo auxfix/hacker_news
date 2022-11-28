@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Reload from 'components/Reload';
-
 import { fireEvent, render, screen } from 'test-utils';
 
 describe('Reload', () => {

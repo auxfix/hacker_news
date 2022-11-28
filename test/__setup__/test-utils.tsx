@@ -2,12 +2,10 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import deepmerge from 'deepmerge';
+import { initialState } from 'reducers';
 import { Middleware } from 'redux';
 import { configStore } from 'store';
 import { PartialDeep } from 'type-fest';
-
-import { initialState } from 'reducers';
-
 import { RootState } from 'types';
 
 type NavigateOptions = {

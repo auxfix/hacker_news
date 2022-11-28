@@ -1,10 +1,7 @@
 import React from 'react';
-import App from 'Root';
-
-import { ActionTypes } from 'literals';
-
 import { loginSuccess } from 'actions';
-
+import { ActionTypes } from 'literals';
+import App from 'Root';
 import { act, render, screen } from 'test-utils';
 
 const mockDispatch = jest.fn();

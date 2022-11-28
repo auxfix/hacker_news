@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Icon from 'components/Icon';
-
 import { render } from 'test-utils';
 
 describe('Icon', () => {

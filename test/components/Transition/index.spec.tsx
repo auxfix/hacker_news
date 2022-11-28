@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Transition from 'components/Transition/index';
-
 import { render } from 'test-utils';
 
 describe('Transition', () => {

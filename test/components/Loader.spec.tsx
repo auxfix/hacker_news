@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Loader from 'components/Loader';
-
 import { render, screen } from 'test-utils';
 
 describe('Loader', () => {

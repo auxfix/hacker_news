@@ -1,8 +1,8 @@
 declare namespace NodeJS {
   interface ProcessEnv {
+    readonly HACKER_API: string;
     readonly NODE_ENV: 'development' | 'production' | 'test';
     readonly PUBLIC_URL: string;
-    readonly HACKER_API: string;
   }
 }
 

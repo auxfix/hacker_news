@@ -1,7 +1,7 @@
 import React from 'react';
+import { HackerStory } from 'feature/news/types';
 import { Dispatch } from 'redux';
 import { Variants } from 'styled-minimal/lib/types';
-import { HackerStory } from 'feature/news/types';
 
 import { AlertPosition, Icons } from './common';
 
@@ -32,6 +32,6 @@ export interface WithDispatch {
 }
 
 export interface NewsState {
-  news: Array<HackerStory>;
   isLoading: boolean;
+  news: Array<HackerStory>;
 }

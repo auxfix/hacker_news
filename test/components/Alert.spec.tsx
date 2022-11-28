@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Alert from 'components/Alert';
-
 import { render, screen } from 'test-utils';
 
 describe('Alert', () => {

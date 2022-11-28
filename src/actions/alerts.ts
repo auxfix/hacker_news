@@ -1,11 +1,8 @@
 import React from 'react';
 import { uuid } from '@gilbarbara/helpers';
 import { createAction } from '@reduxjs/toolkit';
-
-import { actionPayload } from 'modules/helpers';
-
 import { ActionTypes } from 'literals';
-
+import { actionPayload } from 'modules/helpers';
 import { ShowAlertOptions } from 'types';
 
 export const hideAlert = createAction<string>(ActionTypes.HIDE_ALERT);

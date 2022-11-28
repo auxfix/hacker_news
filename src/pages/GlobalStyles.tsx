@@ -1,6 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-
 import { backgroundColor } from 'modules/theme';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 html {

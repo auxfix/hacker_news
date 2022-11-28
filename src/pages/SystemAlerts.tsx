@@ -1,16 +1,13 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { useUnmount } from 'react-use';
-import styled from 'styled-components';
-import { responsive } from 'styled-minimal';
-
-import { useAppSelector } from 'modules/hooks';
-import { spacer } from 'modules/theme';
-
 import { hideAlert } from 'actions';
-
 import Alert from 'components/Alert';
 import Transition from 'components/Transition';
+import { useAppSelector } from 'modules/hooks';
+import { spacer } from 'modules/theme';
+import styled from 'styled-components';
+import { responsive } from 'styled-minimal';
 
 const Base = styled.div`
   position: fixed;

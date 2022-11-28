@@ -1,7 +1,5 @@
 import React from 'react';
-
-import GlobalStyles from 'containers/GlobalStyles';
-
+import GlobalStyles from 'pages/GlobalStyles';
 import { render } from 'test-utils';
 
 describe('GlobalStyles', () => {

@@ -1,7 +1,5 @@
 import React from 'react';
-
 import Background from 'components/Background';
-
 import { render } from 'test-utils';
 
 describe('Background', () => {

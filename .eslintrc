@@ -57,6 +57,15 @@
   ],
   "rules": {
     "react/no-unescaped-entities": "off",
-    "react/state-in-constructor": "off"
+    "react/state-in-constructor": "off",
+    "camelcase": "off",
+    "default-param-last": "off",
+    "import/no-self-import": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }

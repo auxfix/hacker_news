@@ -1,12 +1,9 @@
 import React from 'react';
+import Icon from 'components/Icon';
+import { spacer, variants } from 'modules/theme';
 import styled from 'styled-components';
 import { Alert as AlertComponent, Box } from 'styled-minimal';
 import { Variants } from 'styled-minimal/lib/types';
-
-import { spacer, variants } from 'modules/theme';
-
-import Icon from 'components/Icon';
-
 import { Icons } from 'types';
 
 interface Props {

@@ -1,7 +1,6 @@
+import { appColor } from 'modules/theme';
 import styled, { keyframes } from 'styled-components';
 import { px } from 'styled-minimal';
-
-import { appColor } from 'modules/theme';
 
 interface Props {
   block?: boolean;
@@ -137,7 +136,7 @@ const LoaderRotateCircle = styled.circle`
   stroke-linecap: round;
 `;
 
-const Loader = (props: Props) => {
+function Loader(props: Props) {
   let output;
 
   if (props.type === 'rotate') {
@@ -164,7 +163,7 @@ const Loader = (props: Props) => {
   }
 
   return output;
-};
+}
 
 Loader.defaultProps = {
   block: false,

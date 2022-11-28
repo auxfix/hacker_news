@@ -1,4 +1,1 @@
-import news from './news';
-
-export default news;
-export { newsState } from './news';
+export { newsState, default as news } from './news';

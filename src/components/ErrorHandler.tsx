@@ -1,6 +1,5 @@
-import { Button, Container, Paragraph } from 'styled-minimal';
-
 import Icon from 'components/Icon';
+import { Button, Container, Paragraph } from 'styled-minimal';
 
 interface Props {
   error: Error;

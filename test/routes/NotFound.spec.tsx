@@ -1,7 +1,5 @@
 import React from 'react';
-
 import NotFound from 'routes/NotFound';
-
 import { fireEvent, navigate, render, screen } from 'test-utils';
 
 describe('NotFound', () => {

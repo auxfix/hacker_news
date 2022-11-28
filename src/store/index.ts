@@ -1,11 +1,9 @@
+import reducers from 'reducers';
 import { applyMiddleware, compose, createStore, Middleware, Store } from 'redux';
 import { persistCombineReducers, persistStore } from 'redux-persist';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import storage from 'redux-persist/lib/storage';
-
-import reducers from 'reducers';
 import rootSaga from 'sagas';
-
 import { RootState } from 'types';
 
 import middleware, { sagaMiddleware } from './middleware';

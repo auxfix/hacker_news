@@ -1,6 +1,5 @@
-import { all, fork } from 'redux-saga/effects';
-
 import hackerNews from 'feature/news/sagas';
+import { all, fork } from 'redux-saga/effects';
 
 /**
  * rootSaga

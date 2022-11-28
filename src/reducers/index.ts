@@ -1,5 +1,6 @@
+import { news, newsState } from 'feature/news/reducers';
+
 import alerts, { alertsState } from './alerts';
-import news, { newsState } from 'feature/news/reducers';
 
 export const initialState = {
   alerts: alertsState,
@@ -8,5 +9,5 @@ export const initialState = {
 
 export default {
   ...alerts,
-  ...news
+  ...news,
 };
