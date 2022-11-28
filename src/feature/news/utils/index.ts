@@ -8,7 +8,7 @@ export function getRundomItemsFromArray(
 }
 
 export function getRundomArray(arrayLength: number): Array<number> {
-  return [...Array(arrayLength).keys()].sort(() => 0.5 - Math.random());
+  return Array.from(Array(arrayLength).keys()).sort(() => 0.5 - Math.random());
 }
 
 export function getFormattedTimeForNews(timeStamp: number) {
