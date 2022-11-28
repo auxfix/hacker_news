@@ -1,9 +1,7 @@
 {
   "customSyntax": "postcss",
-  "processors": ["stylelint-processor-styled-components"],
   "extends": [
     "stylelint-config-standard",
-    "stylelint-config-styled-components"
   ],
   "plugins": [
     "stylelint-order"
@@ -43,6 +41,9 @@
       ["px", "em"], {
         "ignoreProperties": {
           "px": ["max-width"]
+        },
+        "ignoreMediaFeatureNames": {
+          "px": ["min-width", "max-width"]
         }
       }
     ],
