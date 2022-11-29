@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/feture/news should handle GET_NEWS_FAILURE 1`] = `
+{
+  "isLoading": false,
+  "news": [
+    {
+      "authorId": "hacker.one",
+      "id": 242342343,
+      "img": "https://images/nice_image.jpg",
+      "karma": 34,
+      "score": 74,
+      "time": 1669726441,
+      "title": "amazing article",
+      "url": "https://en.wikipedia.org/wiki/Hacker",
+    },
+  ],
+}
+`;
+
+exports[`reducers/feture/news should handle GET_NEWS_REQUEST 1`] = `
+{
+  "isLoading": true,
+  "news": [],
+}
+`;
+
+exports[`reducers/feture/news should handle GET_NEWS_SUCCESS 1`] = `
+{
+  "isLoading": false,
+  "news": [
+    {
+      "authorId": "hacker.one",
+      "id": 242342343,
+      "img": "https://images/nice_image.jpg",
+      "karma": 34,
+      "score": 74,
+      "time": 1669726441,
+      "title": "amazing article",
+      "url": "https://en.wikipedia.org/wiki/Hacker",
+    },
+  ],
+}
+`;
+
+exports[`reducers/feture/news should return the initial state 1`] = `
+{
+  "isLoading": false,
+  "news": [],
+}
+`;
