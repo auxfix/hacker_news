@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`feature/news/actions should return getNews action faiure should return an action failure 1`] = `
+{
+  "payload": undefined,
+  "type": "GET_NEWS_FAILURE",
+}
+`;
+
+exports[`feature/news/actions showAlert should return getNews action success 1`] = `
+{
+  "meta": undefined,
+  "payload": [],
+  "type": "GET_NEWS_SUCCESS",
+}
+`;
+
+exports[`feature/news/actions showAlert should return getNews ction 1`] = `
+{
+  "payload": undefined,
+  "type": "GET_NEWS_REQUEST",
+}
+`;
