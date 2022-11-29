@@ -16,11 +16,11 @@ export default function Button(props: ButtonProps) {
   return (
     <button
       className={buttonStyle}
+      data-testid="button"
       onClick={onClick}
       onMouseDown={onButtonDown}
       onMouseUp={onButtonUp}
       type="button"
-      data-testid="button"
     >
       {children}
     </button>

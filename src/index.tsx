@@ -1,6 +1,5 @@
 import { createRoot } from 'react-dom/client';
 import { ErrorBoundary } from 'react-error-boundary';
-import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
 import { showAlert } from 'actions';
 import ErrorHandler from 'components/ErrorHandler';
@@ -25,9 +24,7 @@ root.render(
   <Provider store={store}>
     <PersistGate loading={<Loader block size={100} />} persistor={persistor}>
       <ErrorBoundary FallbackComponent={ErrorHandler}>
-        <HelmetProvider>
-          <Root />
-        </HelmetProvider>
+        <Root />
       </ErrorBoundary>
       <GlobalStyles />
     </PersistGate>
