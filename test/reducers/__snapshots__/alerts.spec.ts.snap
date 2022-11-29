@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`reducers/alerts should handle HIDE_ALERT 1`] = `
-Object {
-  "data": Array [],
+{
+  "data": [],
 }
 `;
 
 exports[`reducers/alerts should handle SHOW_ALERT 1`] = `
-Object {
-  "data": Array [
-    Object {
+{
+  "data": [
+    {
       "icon": "dot-circle-o",
       "id": "test",
       "message": "HELLO",
@@ -22,7 +22,7 @@ Object {
 `;
 
 exports[`reducers/alerts should return the initial state 1`] = `
-Object {
-  "data": Array [],
+{
+  "data": [],
 }
 `;

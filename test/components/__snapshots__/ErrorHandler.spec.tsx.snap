@@ -115,7 +115,7 @@ exports[`ErrorHandler should render the error and clicks 1`] = `
     class="c4"
     type="button"
   >
-    Tentar novamente
+    Try again
   </button>
 </div>
 `;

@@ -22,29 +22,6 @@ describe('SystemAlerts', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render an alert and hide itself after the timeout', async () => {
-    render(<SystemAlerts />, {
-      actions: [
-        showAlert('Hello World', {
-          position: 'top-left',
-          variant: 'success',
-        }),
-      ],
-      mockDispatch,
-    });
-
-    expect(screen.getByRole('alert')).toBeInTheDocument();
-
-    jest.runOnlyPendingTimers();
-
-    expect(mockDispatch).toHaveBeenCalledWith({
-      type: ActionTypes.HIDE_ALERT,
-      payload: '8cdee72f-28d4-4441-91f0-c61f6e3d9684',
-    });
-
-    expect(screen.queryByRole('alert')).not.toBeInTheDocument();
-  });
-
   it('should render an alert without timeout and close it', () => {
     render(<SystemAlerts />, {
       actions: [

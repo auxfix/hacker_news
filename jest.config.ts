@@ -22,7 +22,7 @@ module.exports = {
     '\\.(css|scss)$': '<rootDir>/test/__mocks__/styleMock.ts',
     '\\.(jpe?g|png|gif|ttf|eot|woff|md)$': '<rootDir>/test/__mocks__/fileMock.ts',
     '\\.svg$': '<rootDir>/test/__mocks__/svgMock.ts',
-    'test-utils': '<rootDir>/test/__setup__/test-utils.tsx',
+    '^test-utils$': '<rootDir>/test/__setup__/test-utils.tsx',
   },
   setupFiles: ['<rootDir>/test/__setup__/setupFiles.ts'],
   setupFilesAfterEnv: ['<rootDir>/test/__setup__/setupFilesAfterEnv.ts'],
@@ -30,9 +30,9 @@ module.exports = {
   testEnvironment: 'jest-environment-jsdom-global',
   testEnvironmentOptions: {
     resources: 'usable',
+    url: 'http://localhost:3000',
   },
   testRegex: '/test/.*?\\.(test|spec)\\.tsx?$',
-  testURL: 'http://localhost:3000',
   transform: {
     '.*\\.(j|t)sx?$': 'babel-jest',
   },

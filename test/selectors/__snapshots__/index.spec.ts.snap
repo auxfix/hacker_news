@@ -1,20 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`selectors selectApp should return the app 1`] = `
-Object {
-  "query": "react",
-}
-`;
+exports[`selectors selectApp should return the hacker news 1`] = `[]`;
 
-exports[`selectors selectGitHub should return the github 1`] = `
-Object {
-  "topics": Object {},
-}
-`;
-
-exports[`selectors selectUser should return the user 1`] = `
-Object {
-  "isAuthenticated": false,
-  "status": "idle",
-}
-`;
+exports[`selectors selectGitHub should return loading status 1`] = `false`;

@@ -8,14 +8,4 @@ describe('NotFound', () => {
 
     expect(screen.getByTestId('NotFound')).toMatchSnapshot();
   });
-
-  it('should redirect to home', () => {
-    navigate({ pathname: '/some-page' });
-
-    render(<NotFound />);
-
-    fireEvent.click(screen.getByRole('link'));
-
-    expect(window.location.pathname).toBe('/');
-  });
 });
