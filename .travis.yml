@@ -28,7 +28,6 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - npm run validate
-  - npm run test:e2e
   - npm run build
 deploy:
   on:

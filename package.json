@@ -190,7 +190,7 @@
     "build:serve": "npm run build && npm run serve",
     "analyze": "NODE_ENV=production webpack --config config/webpack.config.js --profile --json > webpack.stats.json",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src config test tools",
-    "lint:styles": "stylelint \"src/**/*.{ts,tsx}\" --config ./.stylelintrc_common && stylelint \"src/**/*.{sass,scss}\" --config ./.stylelintrc_sass",
+    "lint:styles": "stylelint \"src/**/*.{ts,tsx}\" --config .stylelintrc_common && stylelint \"src/**/*.{sass,scss}\" --config .stylelintrc_sass",
     "test": "is-ci \"test:coverage\" \"test:watch\"",
     "test:coverage": "jest --bail --coverage",
     "test:watch": "jest --watchAll --verbose",

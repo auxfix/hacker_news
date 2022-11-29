@@ -39,6 +39,10 @@
     "selector-no-qualifying-type": [true, { "ignore": ["class"] }],
     "selector-pseudo-element-colon-notation": "single",
     "string-quotes": "single",
+    "import-notation": null,
+    "keyframe-selector-notation": null,
+    "annotation-no-unknown": null,
+    "keyframe-block-no-duplicate-selectors": null,
     "unit-disallowed-list": [
       ["px", "em"], {
         "ignoreProperties": {
