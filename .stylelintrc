@@ -1,9 +1,7 @@
 {
   "customSyntax": "postcss",
-  "processors": ["stylelint-processor-styled-components"],
   "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-styled-components"
+    "stylelint-config-standard"
   ],
   "plugins": [
     "stylelint-order"
@@ -17,6 +15,7 @@
         "ignoreAtRules": ["else"]
       }
     ],
+    "import-notation": null,
     "at-rule-no-unknown": null,
     "color-named": "never",
     "declaration-colon-newline-after": null,
@@ -39,10 +38,14 @@
     "selector-no-qualifying-type": [true, { "ignore": ["class"] }],
     "selector-pseudo-element-colon-notation": "single",
     "string-quotes": "single",
+    "number-leading-zero": null,
     "unit-disallowed-list": [
       ["px", "em"], {
         "ignoreProperties": {
-          "px": ["max-width", "font-size"]
+          "px": ["max-width"]
+        },
+        "ignoreMediaFeatureNames": {
+          "px": ["min-width", "max-width"]
         }
       }
     ],
