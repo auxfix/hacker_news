@@ -210,8 +210,8 @@
   "prettier": "@gilbarbara/prettier-config",
   "lint-staged": {
     "*.ts?(x)": [
-      "eslint --fix",
-      "stylelint --config .stylelintrc_common --fix",
+      "eslint",
+      "stylelint --config .stylelintrc_common",
       "git add",
       "jest --findRelatedTests"
     ],

@@ -59,6 +59,7 @@
     "react/no-unescaped-entities": "off",
     "react/state-in-constructor": "off",
     "camelcase": "off",
+    "unicorn/prefer-spread": "off",
     "default-param-last": "off",
     "import/no-self-import": "off",
     "prettier/prettier": [
