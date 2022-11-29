@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsItem should render properly 1`] = `
+<div
+  data-testid="NewsItem"
+>
+  <img
+    alt="News cover"
+    src="https://images/nice_image.jpg"
+  />
+  <div>
+    <div>
+      <span
+        data-testid="day"
+      >
+        Tuesday
+      </span>
+      <span
+        data-testid="monthDateYear"
+      >
+        November 29 2022
+      </span>
+    </div>
+    <h1
+      data-testid="title"
+    >
+      amazing article
+    </h1>
+    <div>
+      <div>
+        <span>
+          Story score:
+        </span>
+        <span
+          data-testid="score"
+        >
+          74
+        </span>
+      </div>
+      <div>
+        <span>
+          Author:
+        </span>
+        <span
+          data-testid="author"
+        >
+          hacker.one
+        </span>
+      </div>
+      <div>
+        <span>
+          Author Karma:
+        </span>
+        <span
+          data-testid="karma"
+        >
+          34
+        </span>
+      </div>
+    </div>
+    <a
+      data-testid="link"
+      href="https://en.wikipedia.org/wiki/Hacker"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Read more
+    </a>
+  </div>
+</div>
+`;
