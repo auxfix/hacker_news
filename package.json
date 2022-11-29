@@ -211,7 +211,7 @@
   "lint-staged": {
     "*.ts?(x)": [
       "eslint --fix",
-      "stylelint --fix",
+      "stylelint --config .stylelintrc_common --fix",
       "git add",
       "jest --findRelatedTests"
     ],
