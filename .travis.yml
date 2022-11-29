@@ -21,6 +21,7 @@ sudo: true
 before_install:
   - pip install --user --upgrade pip
   - pip install --user awscli
+  - sudo apt-get install nasm zlib1g-dev
 before_script:
   - npm install
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
