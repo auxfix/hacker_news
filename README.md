@@ -10,3 +10,4 @@ This is a simple news feed application that shows 10 random hucking news from th
 - typescript
 - sass modules/styled-component for the styling
 - it has a decent test coverage > 70%
+- git hook which runs linters and tests on every commit, which prevents problematic/not super beautiful code slippering to the repository
