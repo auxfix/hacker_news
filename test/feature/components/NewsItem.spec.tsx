@@ -22,7 +22,7 @@ describe('NewsItem', () => {
     expect(screen.getByTestId('score')).toHaveTextContent(testNewsItem.score.toString());
     expect(screen.getByTestId('author')).toHaveTextContent(testNewsItem.authorId);
     expect(screen.getByTestId('title')).toHaveTextContent(testNewsItem.title);
-    expect(screen.getByTestId('karma')).toHaveTextContent(testNewsItem.karma?.toString());
+    expect(screen.getByTestId('karma')).toHaveTextContent(testNewsItem.karma?.toString()!);
     expect(screen.getByTestId('link')).toHaveAttribute('href', testNewsItem.url);
   });
 });

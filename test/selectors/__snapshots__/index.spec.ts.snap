@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`selectors selectApp should return the hacker news 1`] = `[]`;
-
-exports[`selectors selectGitHub should return loading status 1`] = `false`;
