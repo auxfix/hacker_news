@@ -30,6 +30,8 @@ before_script:
 script:
   - npm run validate
   - npm run build
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 deploy:
   on:
     branch: master
@@ -41,8 +43,6 @@ deploy:
   skip_cleanup: true
   local_dir: build
   cache_control: 'max-age=21600'
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 after_deploy:
   - aws configure set preview.cloudfront true
   - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
