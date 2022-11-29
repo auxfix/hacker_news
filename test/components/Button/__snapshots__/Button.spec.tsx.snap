@@ -2,6 +2,7 @@
 
 exports[`Button should render properly 1`] = `
 <button
+  data-testid="button"
   type="button"
 >
   Click me

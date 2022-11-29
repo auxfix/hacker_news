@@ -20,6 +20,7 @@ export default function Button(props: ButtonProps) {
       onMouseDown={onButtonDown}
       onMouseUp={onButtonUp}
       type="button"
+      data-testid="button"
     >
       {children}
     </button>
