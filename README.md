@@ -26,4 +26,8 @@ Test coverage and bundle size are calculated on every build so we can control th
 
 ### unit/e2e tests :test_tube:
 
-Code is covered both with the **unit** and **e2e** tests. Unit tests check small pieces of functionality in the isolation and the e2e test runs the common scenario of reading viewing and updating news feed
+Code is covered both with the **unit** and **e2e** tests. **Unit** tests check small pieces of functionality in the isolation and the **e2e** test runs the common scenario of reading viewing and updating news feed
+
+### hosting :globe_with_meridians:
+
+**Hacker News** app is a production-ready deployment solution. It is hosted as a static site on the **AWS S3** bucket and distributed via **Cloud Front** for better load speed across the globe. The connection is encrypted with SSL so it will safe to transfer user data if some account/user functionality will be implemented in the future.
