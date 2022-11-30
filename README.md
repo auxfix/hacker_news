@@ -10,8 +10,8 @@ This is a simple news feed application that shows 10 random hucking news from th
 
 - **React 18**-based app
 - **Redux/Redux-toolkit/redux-saga** is used for the state management
-- it is a full **CI/CD** solution: if new code is committed in the master branch it will bebuilt/linted/tested first and if these steps are finished successfully then it will be uploaded automatically to AWS S3/CloudFront
-- **typescript**
+- it is a full **CI/CD** solution: if new code is committed in the master branch it will be **built/linted/tested** first and if these steps are finished successfully then it will be uploaded automatically to **AWS S3/CloudFront**
+- **TypeScript**
 - **sass modules/styled-component** for the styling
 - it has a decent test coverage > 70%
 - **git hooks** which runs linters and tests on every commit, which prevents problematic/_not super beautiful_ code slippering to the repository
