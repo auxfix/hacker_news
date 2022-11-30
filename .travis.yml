@@ -1,51 +1,51 @@
 language: node_js
-
 env:
   global:
-    - PATH=$HOME/.local/bin:$PATH
-
+  - PATH=$HOME/.local/bin:$PATH
+  - secure: FWJr0n8FfV/Y29eZXLzipNHmvnT0c7Ca/rSMk8UK84Giy3ob9u1M/fHkEHoF7Ip114ERW1b7vydcRkFYFeJki8fiG9C1iLL2Kf9zv5mcKwcaToTT9UTDgp9uvOkgIrGEtJqQt8QQ+zZCk752Q0XZztTaCEm2VVHi24YY2IEdyhWSKpJnIR8/ex/45NEFRTaa1NQW3YrRGXZNs8aoVq1TJ7LKlzlIcarmM0zYO01BrLm3vMTgzvvO/EuH35MuAHHoC7zhj09+vkNDYzzOYHABhqNNE6SaNMULxIhO8j4yaG5zroMtf1+U7rTGjb7yAN3rqvXFStB/pdw+5OZLbJFOEpLhSO2yxwvkdyiNPOVEk/lVx57GWb5pQhchomxFsxiW07QnDfLE9xJK9e87xasUjEFJm0U9zNuYrMAjArWf7jKL8r2k0UW3Rg5PK+MBjmtxJZFjisz7xI+qOPUPckbNJp0TSR1GIE+s8MMiqE+2f6FUl9KhMSzGeoRjVKvC/WZtzXP+kXlB9J7Y/ojIKUpaaGatIy0WtXGDXT88T9zQOYOYgMzGmZNEOpMH8pp1jam4UE1qZfSj5yzOhrK3HPo9cU1EISaksbmP8GbLPoW6l5fTaJ0sNNZUKCavwACTkyBvBW6bgJlBOn9lgJ+LRTysBHxp60zdTITzZEsyNDmYuO4=
+  - secure: nwQGoamft4/w2I3Oki5OuB2LHShzEDGL+QRwp4AMiATlJTZFQ36VRNzZTpyDBUX4ovaNrOh76GK6iOs3aHaPfudcRtVqbn03Jx+PJ6N7kX7Sin7dW9fiKGqIvhQP7oF0CuA8DXcGs75zrWgBKV1awxpnGeDJ4OEka/26t4C18PwOmyqkGuMBH/jrOw/ugztDEa0Ced/NNeK42HdT4QowX5oPN59SlwJHGJJTtc9YV4Zkwi2Pzvrq7O5xRITFgRiBJXWTkzC72qRFoxdfzQ+OExKSStcADJUx33kDfYLaIgTAMUq50L5z8xLkJmlpHrqEY8Jx0aHJmXcHep1PmzVN7WsBSoxqnhuzTQVOYYq0nu3NLl3OCldYvYhRdBmfAn+8TXGomDNBr9FnXl+RX92pVOlHGwFDGE/m1FNIa8bmnDgreC9c/JM9XhUdJWbX8EOe61xYL2A7zXRUAtfKDH324fn+cbp7ySZKjDXc6v9KS7svdmlOrigvFN9fJu2nbAGFZKEpqWvhnI1HJusD+QAQnH3Qc3aGpLS3M/C0zradjIr9uxNbeo0XWkvxMoDBYnaF+Of70Ohd0SjkQKbZR6gGTxvncaCDSWkDXbgLRVgfYuLq8jJBEvnjHzG6HDAoj9tWgFAcBW/7FElXdK2jIhC20/mZ6FUzQb4qyacyoguXBTY=
+  - secure: L+TfxuBrMbZlK0RXpXkcjTQ8uH4Wy25dO6B+7dJmzhOMQCM7iVG/DybwqKBCAdhxNQGTwzYOjLQWFato1wG/dei4mdnFnYzFdJ5iobaTl3Dgtt0s1Zg/kHQuCYivJT/TET59O/lt40zZO4wEjdYyQdEntIxzLswdMXaebPEYn9lU8FRwp0KBhlS3Llmb42aT4ztSEIRetOOdEenFBf82io0B9WTLFtb7DnoUST1JlbMbKLLKcGwonjJ5ezSfI/8rQiRMxPFpl3DBNgyyahRKuz4eGjEGSjhdpiI1U70pfG+CH8VwsytqVRguJ+2FZJtVMgo9fvNr1HWrneFhG1OkS9fFSkgrPxUIu39GJRv13yH8KuQifryhJq2Qm9YBMqf2r40KFmlqKBMObtf7W6AiMJSDFowbJVnq62luulxVzM6fcacyvZVNJejtqjtgqHDnMODZLfTjNFX1XEG392ndeKQAZhJqs4QuFIe47VA9PDG5OHeZHd9zbB92bsuI0oJA73QBkBQeASHkDF5b6c03Pr5EB0QFqlSAgWl1N5d4byKCgtWUcDo0a+FrwDibiv7zQwHP4w3+XIKbnDkP2YAqkyDe/+MkcgNERaRMyFHBCV7ki8ie5yB3E3GifzYy4VwGATLyJhdMpqhkbLkDyJpvVskW3suRl1OI5WKtWXoVn7w=
+  - secure: IIXJIb0H4srpHE1xGCVVk0CX3PhJ9ietLBkleAvb5Ri9D/5ElM0d9Sqm5IT0KY+ODl/iQZcUHhz0S3EZVVQTB5WWjhNtM6sQJ0aQ1sKn8ZVekwIhRimI9Q3cCXdxpzdPp8gU/1ADOwkHe4QlwF7ixNynpdkT+drBkJFVuUpzIn8e8iRLPhZvSG7eq+uFqeypdYq4GHwIBfZnPecGfw+neusApciNlDIYoE2Cg6WcflFBsIXEy1lUFr6X6W48kRhiUX4cQ5Mgx2AiC2ADivFJUr5pEoUaIeJsHRpQ5CCWRokTIpZ8Oy4OYZ36jhyz1Gsggfy3PqtLrOh3QPOcTPWNVQ1JvDGNWxydYk2l6wd03Rmh7jqXGogUCIZt+N/qS20rZRpXXJ/Orc84Lg29aLJJ642vB+cHepIKjP6/GR5F8pTShvygFUwzDLkL6UkLqzCWzsN38OQlYKjHIBDAWKqEalNkHj4XQ/OTCZHN5LUU3pJ9E3F1KgysNBx5DGuSANB5Hx+YRJ9Pm6bV+L2ltr/iRiXbhojD/QKiIMB7R3qssic6G2cFkB+xkuBfVCH88w6KQZnllFwWy9X+aEbXstT1YttXuLdHtupfPNwDwSs79jBDo9jicUMHQJNjw9VztluXOn7JEJ8Hh59fIGvVkMRYTjH7v/4HU8Z+wsTaoziqKOw=
 dist: xenial
-
 node_js:
-  - '14'
+- '14'
 cache:
   pip: true
   npm: true
   directories:
-    - 'node_modules'
+  - node_modules
 python:
-  - 3.7
-
+- 3.7
 sudo: true
-
 before_install:
-  - pip install --user --upgrade pip
-  - pip install --user awscli
-  - sudo apt-get install nasm zlib1g-dev
+- pip install --user --upgrade pip
+- pip install --user awscli
+- sudo apt-get install nasm zlib1g-dev
 before_script:
-  - npm install
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+- npm install
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- "./cc-test-reporter before-build"
 script:
-  - npm run validate
-  - npm run build
+- npm run validate
+- npm run build
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 deploy:
   on:
     branch: master
   provider: s3
-  region: $DEPLOY_REGION
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: $BUCKET_NAME
+  region: "$DEPLOY_REGION"
+  access_key_id: "$AWS_ACCESS_KEY_ID"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  bucket: "$BUCKET_NAME"
   skip_cleanup: true
   local_dir: build
-  cache_control: 'max-age=21600'
+  cache_control: max-age=21600
 addons:
   apt:
     packages:
-      - libgconf-2-4
+    - libgconf-2-4
 services:
-  - xvfb
+- xvfb
