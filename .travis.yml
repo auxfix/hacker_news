@@ -1,47 +1,50 @@
 language: node_js
 env:
   global:
-  - PATH=$HOME/.local/bin:$PATH
+    - PATH=$HOME/.local/bin:$PATH
 dist: xenial
 node_js:
-- '14'
+  - '14'
 cache:
   pip: true
   npm: true
   directories:
-  - node_modules
+    - node_modules
 python:
-- 3.7
+  - 3.7
 sudo: true
 before_install:
-- pip install --user --upgrade pip
-- pip install --user awscli
-- sudo apt-get install nasm zlib1g-dev
+  - pip install --user --upgrade pip
+  - pip install --user awscli
+  - sudo apt-get install nasm zlib1g-dev
 before_script:
-- npm install
-- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
-  > ./cc-test-reporter
-- chmod +x ./cc-test-reporter
-- "./cc-test-reporter before-build"
+  - npm install
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - './cc-test-reporter before-build'
 script:
-- npm run validate
-- npm run build
+  - npm run validate
+  - npm run build
 after_script:
-- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
+  - './cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT'
 deploy:
   on:
     branch: master
   provider: s3
-  region: "$DEPLOY_REGION"
-  access_key_id: "$AWS_ACCESS_KEY_ID"
-  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
-  bucket: "$BUCKET_NAME"
+  region: '$DEPLOY_REGION'
+  access_key_id: '$AWS_ACCESS_KEY_ID'
+  secret_access_key: '$AWS_SECRET_ACCESS_KEY'
+  bucket: '$BUCKET_NAME'
   skip_cleanup: true
   local_dir: build
   cache_control: max-age=21600
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID_1 --paths "/*"
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID_2 --paths "/*"
 addons:
   apt:
     packages:
-    - libgconf-2-4
+      - libgconf-2-4
 services:
-- xvfb
+  - xvfb
