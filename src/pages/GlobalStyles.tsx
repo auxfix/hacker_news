@@ -14,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     padding: 0, 1.5rem;
     width: 100%;
+
+    #root {
+      width: 100%;
+    }
   }
 
   *,

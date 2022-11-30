@@ -25,7 +25,7 @@ function HackerNews() {
   }
 
   return (
-    <div>
+    <div className={styles.flexcenter}>
       {news.map(newsItem => (
         <NewsItem key={newsItem.id} newsItem={newsItem} />
       ))}
