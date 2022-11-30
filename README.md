@@ -18,11 +18,11 @@ This is a simple news feed application that shows 10 random hucking news from th
 
 ### folder structure :file_folder:
 
-This app has a standard redux structure with dedicated folders for components/redusers/actions/sagas. But these folder contains only code for the common functionality. All code specific for the particular features is contained in the **feature** subfolder with the corresponding name. This code has only one feature **news** feature now so it might seem like an overengineering, but it will help when the app will grow so it will be a way easy to find files by their feature origin.
+This app has a standard redux structure with dedicated folders for components/redusers/actions/sagas. But these folder contains only code for the common functionality. All code specific for the particular features is contained in the **feature** subfolder with the corresponding name. Now this app has only one feature: **news** so it might seem like an overengineering solution, but it will help when the app will grow, so it will be a way easy to find files by their feature origin.
 
 ### test coverage and bundle size :microscope:
 
-Test coverage and bundle size are calculated on every build so we can control these values and see if they violate admissible thresholds
+Test coverage and bundle size are calculated on every build, so we can control these values and see if they violate admissible thresholds
 
 ### unit/e2e tests :test_tube:
 
@@ -30,4 +30,4 @@ Code is covered both with the **unit** and **e2e** tests. **Unit** tests check s
 
 ### hosting :globe_with_meridians:
 
-**Hacker News** app is a production-ready deployment solution. It is hosted as a static site on the **AWS S3** bucket and distributed via **Cloud Front** for the better loading speed across the globe. The connection is encrypted with SSL, so it will be safe to transfer user data if some account/user functionality will be implemented in the future.
+**Hacker News** app is a production-ready deployment solution. It is hosted as a static site on the **AWS S3** bucket and distributed via **Cloud Front** for the better loading speed across the globe. The connection is encrypted with **SSL**, so it will be safe to transfer user data if some account/user functionality will be implemented in the future.
