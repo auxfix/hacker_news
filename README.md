@@ -30,4 +30,4 @@ Code is covered both with the **unit** and **e2e** tests. **Unit** tests check s
 
 ### hosting :globe_with_meridians:
 
-**Hacker News** app is a production-ready deployment solution. It is hosted as a static site on the **AWS S3** bucket and distributed via **Cloud Front** for better load speed across the globe. The connection is encrypted with SSL so it will safe to transfer user data if some account/user functionality will be implemented in the future.
+**Hacker News** app is a production-ready deployment solution. It is hosted as a static site on the **AWS S3** bucket and distributed via **Cloud Front** for the better loading speed across the globe. The connection is encrypted with SSL, so it will be safe to transfer user data if some account/user functionality will be implemented in the future.
