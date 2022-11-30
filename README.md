@@ -4,7 +4,7 @@
 
 ### URL: [www.besthackingnews.net](https://www.besthackingnews.net).
 
-This is a simple news feed application that shows 10 random hucking news from the [Hacker News API](https://github.com/HackerNews/API).
+This is a simple news feed application that shows 10 random hacking news from the [Hacker News API](https://github.com/HackerNews/API).
 
 ## Main features :cd:
 
