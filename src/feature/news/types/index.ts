@@ -2,7 +2,8 @@ export interface HackerStory {
   authorId: string;
   id: number;
   img?: string;
-  karma?: number;
+  karma?: number; 
+  num?: number;
   score: number;
   time: number;
   title: string;

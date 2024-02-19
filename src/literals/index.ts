@@ -10,6 +10,7 @@ export const ActionTypes = keyMirror({
   GET_NEWS_REQUEST: undefined,
   GET_NEWS_SUCCESS: undefined,
   GET_NEWS_FAILURE: undefined,
+  GET_NEWS_PIECE_SUCCESS: undefined,
 });
 
 export const STATUS: Status = {
