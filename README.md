@@ -2,7 +2,7 @@
 
 # Hacker News :floppy_disk:
 
-### URL: [www.besthackingnews.net]([https://www.besthackingnews.net](https://hacker-news-qxkbz18gn-auxfix.vercel.app/)).
+### URL: [Hacker News](https://hacker-news-qxkbz18gn-auxfix.vercel.app)
 
 This is a simple news feed application that shows 10 random hacking news from the [Hacker News API](https://github.com/HackerNews/API).
 
