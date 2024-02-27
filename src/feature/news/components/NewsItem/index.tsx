@@ -17,6 +17,7 @@ export default function NewsItem(props: NewsProps) {
       <img alt="News cover" className={styles.image} src={newsItem.img} />
       <div className={styles.info}>
         <div className={styles.time}>
+          <span>{`# ${newsItem.num}`}</span>
           <span data-testid="day">{weekDay}</span>
           <span data-testid="monthDateYear">{monthDateYear}</span>
         </div>
